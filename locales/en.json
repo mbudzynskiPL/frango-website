@@ -125,6 +125,7 @@
     "title": "Find",
     "intro": "Drop by for chicken or order for delivery.",
     "addressLabel": "Address",
+    "addressHintLabel": "(corner of Jana Pawła II Avenue)",
     "phoneLabel": "Phone",
     "hoursLabel": "Opening hours",
     "tagline": "Grilled chicken • sets • sides • dips",
