@@ -1,0 +1,136 @@
+{
+  "meta": {
+    "title": "Frango | Grillowany Kurczak — Warszawa | Najlepszy kurczak w mieście!",
+    "description": "Frango Grillowany Kurczak — portugalski styl grillowania w Warszawie. Aleja Solidarności 117, 00-140 Warszawa."
+  },
+  "common": {
+    "logoAlt": "Frango Grillowany Kurczak",
+    "daily": "Codziennie"
+  },
+  "nav": {
+    "menu": "Menu",
+    "about": "O nas",
+    "gallery": "Galeria",
+    "order": "Zamów",
+    "contact": "Kontakt",
+    "phone": "📞 787 088 251",
+    "call": "📞 Zadzwoń"
+  },
+  "hero": {
+    "address": "Aleja Solidarności 117 • 00-140 Warszawa",
+    "description": "Soczysty kurczak, świeże dodatki i dwa charakterne dipy. Wszystko prosto z grilla.",
+    "script": "Po portugalsku. Po naszemu.",
+    "menuButton": "ZOBACZ MENU",
+    "orderButton": "ZAMÓW TERAZ",
+    "noteGrilled": "Grillowany na miejscu",
+    "noteDips": "🌶️ Piri-Piri lub 🍋 Lisbon Lime",
+    "noteHours": "🕐 11:00–20:00",
+    "headingGrilled": "GRILLOWANY",
+    "headingChicken": "KURCZAK"
+  },
+  "menu": {
+    "title": "Grillowany",
+    "titleAccent": "kurczak",
+    "intro": "Menu zgodne z aktualną kartą w lokalu. Wybierz samego kurczaka albo jeden z naszych zestawów.",
+    "fullMenu": "Zobacz pełne menu i profil Google →"
+  },
+  "products": {
+    "whole": {
+      "description": "Cały grillowany kurczak.",
+      "alt": "Frango cały grillowany kurczak"
+    },
+    "half": {
+      "description": "Pół grillowanego kurczaka.",
+      "alt": "Frango pół grillowanego kurczaka"
+    },
+    "menu": {
+      "name": "Menu",
+      "description": "Pół grillowanego kurczaka, sałatka, chipsy, Frango dip.",
+      "alt": "Frango pół menu"
+    },
+    "green": {
+      "name": "Green",
+      "description": "Pół grillowanego kurczaka, sałatka, Frango dip.",
+      "alt": "Frango pół Green"
+    },
+    "drink": {
+      "name": "Drink Menu",
+      "description": "Pół grillowanego kurczaka, napój, chipsy, Frango dip.",
+      "alt": "Frango pół Drink Menu"
+    }
+  },
+  "addons": {
+    "kicker": "DODATKI DO FRANGO",
+    "title": "Wybierz coś",
+    "titleAccent": "extra",
+    "intro": "Sałatka, chipsy albo jeden z naszych dipów.",
+    "dipPrefix": "Dip",
+    "salad": {
+      "name": "Sałatka",
+      "description": "Świeża sałatka",
+      "alt": "Sałatka"
+    },
+    "chips": {
+      "name": "Chipsy",
+      "description": "Chrupiący dodatek",
+      "alt": "Chipsy"
+    },
+    "piri": {
+      "description": "Łagodny z pikantną nutą",
+      "alt": "Dip Piri-Piri"
+    },
+    "lime": {
+      "description": "Łagodny cytrusowy",
+      "alt": "Dip Lisbone Lime"
+    }
+  },
+  "story": {
+    "title": "Portugalski styl",
+    "titleAccent": "grillowania",
+    "description": "Skupiamy się na jednej rzeczy: zdrowym, świeżym i dobrze zgrillowanym kurczaku. Grillujemy go tak, aby mięso pozostało soczyste, a skórka była odpowiednio przypieczona i pełna smaku. Do tego polecamy idealnie pasujące dodatki oraz nasz autorski dip.",
+    "best": "to najlepszy kurczak w mieście!",
+    "dipLime": "Wybierz dip cytrynowy",
+    "limeAlt": "Limonka",
+    "or": "albo",
+    "dipPiri": "piri-piri z charakterem.",
+    "photoAlt": "Cały grillowany kurczak Frango"
+  },
+  "gallery": {
+    "kicker": "NASZE ZDJĘCIA",
+    "title": "To jest",
+    "description": "Kurczak, zestawy, dodatki i dipy — dokładnie takie, jakie dostajesz w lokalu.",
+    "heroAlt": "Frango — kurczak i dodatki",
+    "menuAlt": "Frango Menu",
+    "drinkAlt": "Frango Drink Menu",
+    "greenAlt": "Frango Green Menu",
+    "interiorAlt": "Wnętrze restauracji Frango"
+  },
+  "order": {
+    "kicker": "GŁODNY?",
+    "title": "Zamów",
+    "intro": "Znajdź nas na platformach dostaw lub sprawdź opcje zamówienia na naszym profilu Google.",
+    "online": {
+      "title": "Zamów online",
+      "description": "Frango jest dostępne na Pyszne, Uber Eats, Wolt, Glovo i Bolt Food. Aktualne linki do zamówień znajdziesz na naszym profilu Google."
+    },
+    "googleProfile": "Otwórz profil Frango w Google →",
+    "note": "* Przyciski prowadzą do profilu Google, gdzie znajdują się aktualne opcje zamówienia.",
+    "pickup": {
+      "title": "Odbiór osobisty",
+      "description": "Jesteśmy przy Alei Solidarności 117. Zadzwoń i zamów z odbiorem."
+    }
+  },
+  "contact": {
+    "kicker": "GDZIE JESTEŚMY",
+    "title": "Znajdź",
+    "intro": "Wpadnij po kurczaka albo zamów z dostawą.",
+    "addressLabel": "Adres",
+    "phoneLabel": "Telefon",
+    "hoursLabel": "Godziny",
+    "tagline": "Grillowany kurczak • zestawy • dodatki • dipy",
+    "mapsButton": "OTWÓRZ GOOGLE MAPS"
+  },
+  "footer": {
+    "copyright": "© 2026 Frango Grillowany Kurczak"
+  }
+}

@@ -1,0 +1,137 @@
+{
+  "meta": {
+    "title": "Frango | Grilled Chicken — Warsaw | The best chicken in town!",
+    "description": "Frango Grilled Chicken — Portuguese-style grilling in Warsaw. Aleja Solidarności 117, 00-140 Warsaw."
+  },
+  "common": {
+    "logoAlt": "Frango Grilled Chicken",
+    "daily": "Every day"
+  },
+  "nav": {
+    "menu": "Menu",
+    "about": "About us",
+    "gallery": "Gallery",
+    "order": "Order",
+    "contact": "Contact",
+    "phone": "📞 787 088 251",
+    "call": "📞 Call us"
+  },
+  "hero": {
+    "address": "Aleja Solidarności 117 • 00-140 Warsaw",
+    "description": "Juicy chicken, fresh sides and two signature dips. Straight from the grill.",
+    "script": "Portuguese style. Our way.",
+    "menuButton": "SEE MENU",
+    "orderButton": "ORDER NOW",
+    "noteGrilled": "Grilled on site",
+    "noteDips": "🌶️ Piri-Piri or 🍋 Lisbon Lime",
+    "noteHours": "🕐 11:00–20:00",
+    "headingGrilled": "GRILLED",
+    "headingChicken": "CHICKEN"
+  },
+  "menu": {
+    "title": "Grilled",
+    "titleAccent": "chicken",
+    "intro": "Menu based on our current in-store selection. Choose chicken on its own or one of our sets.",
+    "fullMenu": "See full menu and Google profile →"
+  },
+  "products": {
+    "whole": {
+      "description": "A whole grilled chicken.",
+      "alt": "Frango whole grilled chicken"
+    },
+    "half": {
+      "description": "Half a grilled chicken.",
+      "alt": "Frango half grilled chicken"
+    },
+    "menu": {
+      "name": "Menu",
+      "description": "Half a grilled chicken, salad, chips and Frango dip.",
+      "alt": "Frango half chicken menu"
+    },
+    "green": {
+      "name": "Green",
+      "description": "Half a grilled chicken, salad and Frango dip.",
+      "alt": "Frango half Green menu"
+    },
+    "drink": {
+      "name": "Drink Menu",
+      "description": "Half a grilled chicken, drink, chips and Frango dip.",
+      "alt": "Frango half Drink Menu"
+    }
+  },
+  "addons": {
+    "kicker": "EXTRAS FOR FRANGO",
+    "title": "Choose something",
+    "titleAccent": "extra",
+    "intro": "Salad, chips or one of our signature dips.",
+    "dipPrefix": "Dip",
+    "salad": {
+      "name": "Salad",
+      "description": "Fresh salad",
+      "alt": "Salad"
+    },
+    "chips": {
+      "name": "Chips",
+      "description": "Crispy side",
+      "alt": "Chips"
+    },
+    "piri": {
+      "description": "Mild with a spicy kick",
+      "alt": "Piri-Piri dip"
+    },
+    "lime": {
+      "description": "Mild and citrusy",
+      "alt": "Lisbone Lime dip"
+    }
+  },
+  "story": {
+    "title": "Portuguese-style",
+    "titleAccent": "grilling",
+    "description": "We focus on one thing: healthy, fresh and perfectly grilled chicken. We grill it so the meat stays juicy while the skin gets nicely charred and full of flavour. We also recommend perfectly matching sides and our signature dip.",
+    "best": "is the best chicken in town!",
+    "dipLime": "Choose the citrus dip",
+    "limeAlt": "Lime",
+    "or": "or",
+    "dipPiri": "piri-piri with character.",
+    "photoAlt": "Frango whole grilled chicken"
+  },
+  "gallery": {
+    "kicker": "OUR PHOTOS",
+    "title": "This is",
+    "description": "Chicken, sets, sides and dips — exactly what you get at our place.",
+    "heroAlt": "Frango — chicken and sides",
+    "menuAlt": "Frango Menu",
+    "drinkAlt": "Frango Drink Menu",
+    "greenAlt": "Frango Green Menu",
+    "interiorAlt": "Frango restaurant interior"
+  },
+  "order": {
+    "kicker": "HUNGRY?",
+    "title": "Order",
+    "intro": "Find us on delivery platforms or check the ordering options on our Google profile.",
+    "online": {
+      "title": "Order online",
+      "description": "Frango is available on Pyszne, Uber Eats, Wolt, Glovo and Bolt Food. You can find the current ordering links on our Google profile."
+    },
+    "googleProfile": "Open Frango on Google →",
+    "note": "* The buttons lead to our Google profile, where you can find the current ordering options.",
+    "pickup": {
+      "title": "Pick up in person",
+      "description": "We are at Aleja Solidarności 117. Call us and place an order for pickup."
+    }
+  },
+  "contact": {
+    "kicker": "WHERE TO FIND US",
+    "title": "Find",
+    "intro": "Drop by for chicken or order for delivery.",
+    "addressLabel": "Address",
+    "phoneLabel": "Phone",
+    "hoursLabel": "Opening hours",
+    "tagline": "Grilled chicken • sets • sides • dips",
+    "mapsButton": "OPEN GOOGLE MAPS",
+    "addressLine2": "(corner of Jana Pawła II Avenue)"
+  },
+  "footer": {
+    "copyright": "© 2026 Frango Grilled Chicken"
+  }
+}
