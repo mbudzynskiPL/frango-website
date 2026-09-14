@@ -19,7 +19,7 @@
   "hero": {
     "address": "Aleja Solidarności 117 • 00-140 Varsóvia",
     "headingGrilled": "GRELHADO",
-    "headingChicken": "NO CUURRASCO",
+    "headingChicken": "CUURRASCO",
     "description": "Frango suculento, acompanhamentos frescos e dois molhos cheios de personalidade. Tudo diretamente da grelha.",
     "script": "À portuguesa. À nossa maneira.",
     "menuButton": "VER MENU",
@@ -87,7 +87,7 @@
   "story": {
     "title": "Estilo português",
     "titleAccent": "de grelhar",
-    "description": "Focamo-nos numa coisa: frango saudável, fresco e bem grelhado. Grelhamo-lo para que a carne permaneça suculenta e a pele fique bem tostada e cheia de sabor. Recomendamos também acompanhamentos que combinam na perfeição e o nosso molho da casa.",
+    "description": "Focamo-nos numa coisa: frango saudável, fresco e bem grelhado. Grelhamo-lo para que a carne permaneça suculenta e a pele fique bem tostada e cheia de sabor. Recomendamos também acompanhamentos que combinam na perfeição e o nosso molho caseiro.",
     "best": "é o melhor frango da cidade!",
     "dipLime": "Escolha o molho cítrico",
     "limeAlt": "Lima",
