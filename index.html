@@ -59,7 +59,7 @@ footer{background:#041b2c;color:#9eb3c0;padding:30px 0}.footer-in{display:flex;a
 <body>
 <header><nav class="container"><a class="brand" href="#top"><img src="logo.png" alt="Frango Grillowany Kurczak" data-i18n-alt="common.logoAlt"></a><div class="navlinks"><a href="#menu" data-i18n="nav.menu">Menu</a><a href="#frango" data-i18n="nav.about">O nas</a><a href="#galeria" data-i18n="nav.gallery">Galeria</a><a href="#zamow" data-i18n="nav.order">Zamów</a><a href="#kontakt" data-i18n="nav.contact">Kontakt</a><a class="navbtn" href="tel:+48787088251" data-i18n="nav.phone">📞 787 088 251</a></div><div class="lang-switcher" aria-label="Language"><button class="lang-btn active" data-lang="pl" type="button">PL</button><button class="lang-btn" data-lang="en" type="button">EN</button><button class="lang-btn" data-lang="pt" type="button">PT</button></div><a class="mobile-call" href="tel:+48787088251" data-i18n="nav.call">📞 Zadzwoń</a></nav></header>
 <main id="top">
-<section class="hero"><div class="container hero-content"><div class="eyebrow" data-i18n="hero.address">Aleja Solidarności 117 • 00-140 Warszawa</div><h1>FRANGO<br><span class="orange" data-i18n="hero.headingGrilled">GRILLOWANY</span><br><span class="lime" data-i18n="hero.headingChicken">KURCZAK</span></h1><p data-i18n="hero.description">Soczysty kurczak, świeże dodatki i dwa charakterne dipy. Wszystko prosto z grilla.</p><div class="script" data-i18n="hero.script">Po portugalsku. Po naszemu.</div><div class="actions"><a class="btn btn-lime" href="#menu" data-i18n="hero.menuButton">ZOBACZ MENU</a><a class="btn btn-primary" href="#zamow" data-i18n="hero.orderButton">ZAMÓW TERAZ</a></div><div class="hero-note"><span>🔥 <b data-i18n="hero.noteGrilled">Grillowany na miejscu</b></span><span data-i18n="hero.noteDips">🌶️ Piri-Piri lub 🍋 Lisbon Lime</span><span data-i18n="hero.noteHours">🕐 11:00–20:00</span></div></div></section>
+<section class="hero"><div class="container hero-content"><div class="eyebrow" data-i18n="hero.address">Aleja Solidarności 117 • 00-140 Warszawa</div><h1>FRANGO<br><span class="orange" data-i18n="hero.headingGrilled">GRILLOWANY</span><br><span class="lime" data-i18n="hero.headingChicken">KURCZAK</span></h1><p data-i18n="hero.description">Soczysty kurczak, świeże dodatki i dwa charakterne dipy. Wszystko prosto z grilla.</p><div class="script" data-i18n="hero.script">Po portugalsku. Po naszemu.</div><div class="actions"><a class="btn btn-lime" href="#menu" data-i18n="hero.menuButton">ZOBACZ MENU</a><a class="btn btn-primary" href="#zamow" data-i18n="hero.orderButton" >ZAMÓW TERAZ</a></div><div class="hero-note"><span>🔥 <b data-i18n="hero.noteGrilled">Grillowany na miejscu</b></span><span data-i18n="hero.noteDips">🌶️ Piri-Piri lub 🍋 Lisbon Lime</span><span data-i18n="hero.noteHours">🕐 11:00–20:00</span></div></div></section>
 
 <section class="menu-section" id="menu"><div class="container"><div class="section-head"><div><div class="section-kicker">FRANGO</div><h2><span data-i18n="menu.title">Grillowany</span> <span data-i18n="menu.titleAccent">kurczak</span></h2></div><p data-i18n="menu.intro">Menu zgodne z aktualną kartą w lokalu. Wybierz samego kurczaka albo jeden z naszych zestawów.</p></div>
 <div class="menu-grid">
@@ -103,4 +103,55 @@ footer{background:#041b2c;color:#9eb3c0;padding:30px 0}.footer-in{display:flex;a
 </main>
 <footer><div class="container footer-in"><img src="logo.png" alt="Frango"><div data-i18n="footer.copyright">© 2026 Frango Grillowany Kurczak</div><a href="tel:+48787088251">787 088 251</a></div></footer>
 <script src="js/i18n.js" defer></script>
+
+<script>
+document.addEventListener('click', function(e) {
+  const link = e.target.closest('a');
+  if (!link || typeof gtag !== 'function') return;
+
+  const href = link.getAttribute('href') || '';
+  const text = link.textContent.trim().toLowerCase();
+
+  // Zamów teraz
+  if (href === '#zamow' || text.includes('zamów teraz') || text.includes('order now')) {
+    gtag('event', 'click_order_now', {
+      event_category: 'engagement',
+      event_label: 'Zamów teraz'
+    });
+  }
+
+  // Telefon
+  if (href.startsWith('tel:')) {
+    gtag('event', 'click_phone', {
+      event_category: 'contact',
+      event_label: 'Telefon'
+    });
+  }
+
+  // Google Maps / profil Google
+  if (href.includes('maps.app.goo.gl') || text.includes('google maps')) {
+    gtag('event', 'click_google_maps', {
+      event_category: 'navigation',
+      event_label: 'Google Maps'
+    });
+  }
+
+  // Instagram
+  if (href.includes('instagram.com')) {
+    gtag('event', 'click_instagram', {
+      event_category: 'social',
+      event_label: 'Instagram'
+    });
+  }
+
+  // Zobacz menu
+  if (href === '#menu' || text.includes('zobacz menu') || text.includes('see menu')) {
+    gtag('event', 'click_menu', {
+      event_category: 'navigation',
+      event_label: 'Menu'
+    });
+  }
+});
+</script>
+
 </body></html>
