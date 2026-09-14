@@ -1,5 +1,5 @@
 (() => {
-  const supported = ["pl", "en"];
+  const supported = ["pl", "en", "pt"];
   const defaultLanguage = "pl";
   const storageKey = "frango-language";
 
@@ -40,9 +40,7 @@
       button.setAttribute("aria-pressed", String(active));
     });
 
-    try {
-      localStorage.setItem(storageKey, lang);
-    } catch (_) {}
+    try { localStorage.setItem(storageKey, lang); } catch (_) {}
   }
 
   async function setLanguage(lang) {

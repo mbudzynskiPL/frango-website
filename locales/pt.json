@@ -1,0 +1,137 @@
+{
+  "meta": {
+    "title": "Frango | Frango Grelhado — Varsóvia | O melhor frango da cidade!",
+    "description": "Frango Grelhado — estilo português de grelhar em Varsóvia. Aleja Solidarności 117, 00-140 Varsóvia."
+  },
+  "common": {
+    "logoAlt": "Frango Grelhado",
+    "daily": "Todos os dias"
+  },
+  "nav": {
+    "menu": "Menu",
+    "about": "Sobre nós",
+    "gallery": "Galeria",
+    "order": "Encomendar",
+    "contact": "Contacto",
+    "phone": "📞 787 088 251",
+    "call": "📞 Ligar"
+  },
+  "hero": {
+    "address": "Aleja Solidarności 117 • 00-140 Varsóvia",
+    "headingGrilled": "GRELHADO",
+    "headingChicken": "NO CUURRASCO",
+    "description": "Frango suculento, acompanhamentos frescos e dois molhos cheios de personalidade. Tudo diretamente da grelha.",
+    "script": "À portuguesa. À nossa maneira.",
+    "menuButton": "VER MENU",
+    "orderButton": "ENCOMENDAR AGORA",
+    "noteGrilled": "Grelhado no local",
+    "noteDips": "🌶️ Piri-Piri ou 🍋 Lisbon Lime",
+    "noteHours": "🕐 11:00–20:00"
+  },
+  "menu": {
+    "title": "Frango",
+    "titleAccent": "grelhado",
+    "intro": "Menu de acordo com a carta atual no restaurante. Escolha apenas o frango ou um dos nossos menus.",
+    "fullMenu": "Ver menu completo e perfil Google →"
+  },
+  "products": {
+    "whole": {
+      "description": "Frango inteiro grelhado.",
+      "alt": "Frango inteiro grelhado"
+    },
+    "half": {
+      "description": "Meio frango grelhado.",
+      "alt": "Meio frango grelhado"
+    },
+    "menu": {
+      "name": "Menu",
+      "description": "Meio frango grelhado, salada, chips, molho Frango.",
+      "alt": "Menu de meio frango Frango"
+    },
+    "green": {
+      "name": "Green",
+      "description": "Meio frango grelhado, salada, molho Frango.",
+      "alt": "Menu Green de meio frango Frango"
+    },
+    "drink": {
+      "name": "Drink Menu",
+      "description": "Meio frango grelhado, bebida, chips, molho Frango.",
+      "alt": "Drink Menu de meio frango Frango"
+    }
+  },
+  "addons": {
+    "kicker": "ACOMPANHAMENTOS PARA O FRANGO",
+    "title": "Escolha algo",
+    "titleAccent": "extra",
+    "intro": "Salada, chips ou um dos nossos molhos.",
+    "dipPrefix": "Molho",
+    "salad": {
+      "name": "Salada",
+      "description": "Salada fresca",
+      "alt": "Salada"
+    },
+    "chips": {
+      "name": "Chips",
+      "description": "Acompanhamento crocante",
+      "alt": "Chips"
+    },
+    "piri": {
+      "description": "Suave com um toque picante",
+      "alt": "Molho Piri-Piri"
+    },
+    "lime": {
+      "description": "Suave e cítrico",
+      "alt": "Molho Lisbon Lime"
+    }
+  },
+  "story": {
+    "title": "Estilo português",
+    "titleAccent": "de grelhar",
+    "description": "Focamo-nos numa coisa: frango saudável, fresco e bem grelhado. Grelhamo-lo para que a carne permaneça suculenta e a pele fique bem tostada e cheia de sabor. Recomendamos também acompanhamentos que combinam na perfeição e o nosso molho da casa.",
+    "best": "é o melhor frango da cidade!",
+    "dipLime": "Escolha o molho cítrico",
+    "limeAlt": "Lima",
+    "or": "ou",
+    "dipPiri": "piri-piri com personalidade.",
+    "photoAlt": "Frango inteiro grelhado"
+  },
+  "gallery": {
+    "kicker": "AS NOSSAS FOTOS",
+    "title": "Isto é",
+    "description": "Frango, menus, acompanhamentos e molhos — exatamente como os recebe no restaurante.",
+    "heroAlt": "Frango — frango e acompanhamentos",
+    "menuAlt": "Menu Frango",
+    "drinkAlt": "Drink Menu Frango",
+    "greenAlt": "Green Menu Frango",
+    "interiorAlt": "Interior do restaurante Frango"
+  },
+  "order": {
+    "kicker": "COM FOME?",
+    "title": "Encomende",
+    "intro": "Encontre-nos nas plataformas de entrega ou consulte as opções de encomenda no nosso perfil Google.",
+    "online": {
+      "title": "Encomende online",
+      "description": "O Frango está disponível no Pyszne, Uber Eats, Wolt, Glovo e Bolt Food. Encontre os links atuais de encomenda no nosso perfil Google."
+    },
+    "googleProfile": "Abrir perfil Frango no Google →",
+    "note": "* Os botões levam ao perfil Google, onde encontrará as opções de encomenda atuais.",
+    "pickup": {
+      "title": "Levantamento no restaurante",
+      "description": "Estamos na Aleja Solidarności 117. Ligue-nos e faça a sua encomenda para levantar."
+    }
+  },
+  "contact": {
+    "kicker": "ONDE ESTAMOS",
+    "title": "Encontre",
+    "intro": "Passe por cá para buscar frango ou encomende com entrega.",
+    "addressLabel": "Morada",
+    "addressHintLabel": "(cruzamento com a Aleja Jana Pawła II)",
+    "phoneLabel": "Telefone",
+    "hoursLabel": "Horário",
+    "tagline": "Frango grelhado • menus • acompanhamentos • molhos",
+    "mapsButton": "ABRIR GOOGLE MAPS"
+  },
+  "footer": {
+    "copyright": "© 2026 Frango Grelhado"
+  }
+}
