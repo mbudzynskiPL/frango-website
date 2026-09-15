@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "Frango – Kurczak z Grilla w Warszawie | Świeży i zdrowy | Grillowany w stylu portugalskim",
-    "description": "Frango – portugalski kurczak z grilla w centrum Warszawy. Soczysty, zdrowy kurczak, sos piri-piri,sos cytrynowy, świeże dodatki i portugalski smak. Zamów na wynos lub z dostawą."
+    "title": "Frango – Zdrowy i świeży kurczak z grilla w Warszawie",
+    "description": "Zdrowy i świeży kurczak, grillowany w Warszawie w stylu portugalskim. Soczyste mięso, chrupiąca skórka, świeże dodatki oraz sos piri-piri i cytrynowy. Zamów na wynos lub z dostawą."
   },
   "common": {
     "logoAlt": "Frango Grillowany Kurczak",
@@ -18,7 +18,7 @@
   },
   "hero": {
     "address": "Aleja Solidarności 117 • 00-140 Warszawa",
-    "description": "Soczysty kurczak, świeże dodatki i dwa charakterne dipy. Wszystko prosto z grilla.",
+    "description": "Zdrowy i świeży kurczak, grillowany w Warszawie w stylu portugalskim. Soczyste mięso, chrupiąca skórka, świeże dodatki i charakterne sosy.",
     "script": "Po portugalsku. Po naszemu.",
     "menuButton": "ZOBACZ MENU",
     "orderButton": "ZAMÓW TERAZ",
@@ -31,32 +31,32 @@
   "menu": {
     "title": "Grillowany",
     "titleAccent": "kurczak",
-    "intro": "Menu zgodne z aktualną kartą w lokalu. Wybierz samego kurczaka albo jeden z naszych zestawów.",
+    "intro": "Świeży, grillowany kurczak przygotowywany na miejscu. Wybierz samego kurczaka albo jeden z naszych zestawów.",
     "fullMenu": "Zobacz pełne menu i profil Google →"
   },
   "products": {
     "whole": {
       "description": "Cały grillowany kurczak.",
-      "alt": "Frango cały grillowany kurczak"
+      "alt": "Frango - cały świeży grillowany kurczak"
     },
     "half": {
       "description": "Pół grillowanego kurczaka.",
-      "alt": "Frango pół grillowanego kurczaka"
+      "alt": "Frango - pół świeżego grillowanego kurczaka"
     },
     "menu": {
       "name": "Menu",
       "description": "Pół grillowanego kurczaka, sałatka, chipsy, Frango dip.",
-      "alt": "Frango pół menu"
+      "alt": "1/2 Frango menu"
     },
     "green": {
       "name": "Green",
       "description": "Pół grillowanego kurczaka, sałatka, Frango dip.",
-      "alt": "Frango pół Green"
+      "alt": "1/2 Frango Green"
     },
     "drink": {
       "name": "Drink Menu",
       "description": "Pół grillowanego kurczaka, napój, chipsy, Frango dip.",
-      "alt": "Frango pół Drink Menu"
+      "alt": "1/2 Frango Drink Menu"
     }
   },
   "addons": {

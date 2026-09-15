@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "Frango | Frango Grelhado — Varsóvia | O melhor frango da cidade!",
-    "description": "Frango Grelhado — estilo português de grelhar em Varsóvia. Aleja Solidarności 117, 00-140 Varsóvia."
+    "title": "Frango Restaurante – Saudável e Fresco Frango Grelhado em Varsóvia",
+    "description": "Saudável e fresco frango grelhado em Varsóvia no estilo português. Carne suculenta, pele crocante, acompanhamentos frescos e molhos piri-piri e lima. Peça para recolha ou entrega."
   },
   "common": {
     "logoAlt": "Frango Grelhado",
@@ -41,22 +41,22 @@
     },
     "half": {
       "description": "Meio frango grelhado.",
-      "alt": "Meio frango grelhado"
+      "alt": "Meio Frango grelhado"
     },
     "menu": {
       "name": "Menu",
       "description": "Meio frango grelhado, salada, chips, molho Frango.",
-      "alt": "Menu de meio frango Frango"
+      "alt": "Menu de meio Frango"
     },
     "green": {
       "name": "Green",
       "description": "Meio frango grelhado, salada, molho Frango.",
-      "alt": "Menu Green de meio frango Frango"
+      "alt": "Menu Green de meio Frango"
     },
     "drink": {
       "name": "Drink Menu",
       "description": "Meio frango grelhado, bebida, chips, molho Frango.",
-      "alt": "Drink Menu de meio frango Frango"
+      "alt": "Drink Menu de meio Frango"
     }
   },
   "addons": {
