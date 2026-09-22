@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "Frango – Grilled Chicken in Warsaw | Fresh and Healthy | Portuguese Style Grilling",
-    "description": "Frango - grilled chicken in Warsaw with a Portuguese style. Juicy, healthy chicken, piri-piri sauce, lime sauce, fresh sides and an unforgettable taste. Order for pickup or delivery."
+    "title": "Frango – Healthy and Fresh Grilled Chicken in Warsaw",
+    "description": "Healthy and fresh chicken grilled in Warsaw in portugeese style. Jucy meat, crispy skin, fresh sides and piri-piri and lime sauces. Order for pickup or delivery."
   },
   "common": {
     "logoAlt": "Frango Grilled Chicken",
@@ -125,7 +125,7 @@
     "title": "Find",
     "intro": "Drop by for chicken or order for delivery.",
     "addressLabel": "Address",
-    "addressHintLabel": "(corner of Jana Pawła II Avenue)",
+    "addressHintLabel": "(entry from Jana Pawła II Avenue)",
     "phoneLabel": "Phone",
     "hoursLabel": "Opening hours",
     "tagline": "Grilled chicken • sets • sides • dips",
