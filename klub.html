@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="pl">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,39 +9,248 @@
   <title>Klub Frango – Dołącz do nas</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;500;600;700;800&family=Pacifico&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;500;600;700;800&family=Pacifico&display=swap"
+    rel="stylesheet">
   <style>
-    :root { --navy:#0b2f4a; --navy2:#062238; --orange:#ef6a1b; --lime:#d9f000; --cream:#f7f2e8; --white:#fff; --ink:#11283a; --muted:#687782; --line:#dfe5e3; }
-    * { box-sizing:border-box; }
-    body { margin:0; min-height:100vh; background:var(--cream); color:var(--ink); font-family:Inter,Arial,sans-serif; }
-    header { background:rgba(6,34,56,.98); border-bottom:1px solid rgba(255,255,255,.12); }
-    nav { width:min(1180px,92%); min-height:76px; margin:auto; display:flex; align-items:center; justify-content:space-between; gap:20px; }
-    .brand img { width:150px; display:block; }
-    .back-link { color:#fff; font-size:14px; font-weight:800; text-decoration:none; }
-    .back-link:hover { color:var(--lime); }
-    main { min-height:calc(100vh - 150px); display:flex; align-items:center; padding:70px 20px; }
-    .club { width:min(560px,100%); margin:auto; }
-    .kicker { color:var(--orange); font-size:13px; letter-spacing:3px; text-transform:uppercase; font-weight:800; margin-bottom:8px; text-align:center; }
-    h1 { font-family:Pacifico,cursive; font-weight:400; font-size:clamp(44px,8vw,68px); line-height:1.1; color:var(--navy); text-align:center; margin:0 0 15px; }
-    h1 span { color:var(--orange); }
-    .intro { max-width:500px; margin:0 auto 30px; color:var(--muted); line-height:1.65; text-align:center; font-size:16px; }
-    .card { background:var(--white); border-radius:22px; padding:32px; box-shadow:0 18px 55px rgba(6,34,56,.14); }
-    .benefits { display:grid; gap:10px; margin-bottom:26px; }
-    .benefit { display:flex; align-items:center; gap:10px; color:var(--ink); font-size:14px; font-weight:700; }
-    .benefit-icon { width:30px; height:30px; border-radius:50%; background:var(--lime); color:var(--navy); display:flex; align-items:center; justify-content:center; flex:0 0 30px; }
-    form { display:grid; gap:16px; }
-    label { display:block; margin-bottom:7px; color:var(--navy); font-size:13px; font-weight:800; }
-    input[type=text],input[type=tel] { width:100%; height:50px; padding:0 15px; border:1px solid var(--line); border-radius:12px; background:#fff; color:var(--ink); font:500 15px Inter,Arial,sans-serif; outline:none; }
-    input[type=text]:focus,input[type=tel]:focus { border-color:var(--orange); box-shadow:0 0 0 3px rgba(239,106,27,.12); }
-    .consent { display:flex; align-items:flex-start; gap:10px; color:var(--muted); font-size:12px; line-height:1.5; }
-    .consent input { margin-top:3px; accent-color:var(--orange); flex:0 0 auto; }
-    .submit { width:100%; min-height:52px; border:0; border-radius:999px; background:var(--orange); color:#fff; font:800 15px Inter,Arial,sans-serif; cursor:pointer; transition:.2s; }
-    .submit:hover { transform:translateY(-2px); filter:brightness(1.04); }
-    .note { margin:18px 0 0; color:var(--muted); font-size:11px; line-height:1.5; text-align:center; }
-    footer { background:var(--navy2); color:#9eb3c0; padding:25px 20px; text-align:center; font-size:12px; }
-    @media(max-width:600px) { nav{min-height:68px;} .brand img{width:125px;} .back-link{font-size:12px;} main{padding:45px 15px;} .card{padding:24px 20px;} }
+    :root {
+      --navy: #0b2f4a;
+      --navy2: #062238;
+      --orange: #ef6a1b;
+      --lime: #d9f000;
+      --cream: #f7f2e8;
+      --white: #fff;
+      --ink: #11283a;
+      --muted: #687782;
+      --line: #dfe5e3;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: var(--cream);
+      color: var(--ink);
+      font-family: Inter, Arial, sans-serif;
+    }
+
+    header {
+      background: rgba(6, 34, 56, .98);
+      border-bottom: 1px solid rgba(255, 255, 255, .12);
+    }
+
+    nav {
+      width: min(1180px, 92%);
+      height: 64px;
+      margin: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .brand img {
+      width: 150px;
+      display: block;
+    }
+
+    .back-link {
+      color: #fff;
+      font-size: 14px;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    .back-link:hover {
+      color: var(--lime);
+    }
+
+    main {
+      min-height: calc(100vh - 150px);
+      display: flex;
+      align-items: center;
+      padding: 70px 20px;
+    }
+
+    .club {
+      width: min(560px, 100%);
+      margin: auto;
+    }
+
+    .kicker {
+      color: var(--orange);
+      font-size: 13px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      font-weight: 800;
+      margin-bottom: 8px;
+      text-align: center;
+    }
+
+    h1 {
+      font-family: Pacifico, cursive;
+      font-weight: 400;
+      font-size: clamp(44px, 8vw, 68px);
+      line-height: 1.1;
+      color: var(--navy);
+      text-align: center;
+      margin: 0 0 15px;
+    }
+
+    h1 span {
+      color: var(--orange);
+    }
+
+    .intro {
+      max-width: 500px;
+      margin: 0 auto 30px;
+      color: var(--muted);
+      line-height: 1.65;
+      text-align: center;
+      font-size: 16px;
+    }
+
+    .card {
+      background: var(--white);
+      border-radius: 22px;
+      padding: 32px;
+      box-shadow: 0 18px 55px rgba(6, 34, 56, .14);
+    }
+
+    .benefits {
+      display: grid;
+      gap: 10px;
+      margin-bottom: 26px;
+    }
+
+    .benefit {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: var(--ink);
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .benefit-icon {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background: var(--lime);
+      color: var(--navy);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex: 0 0 30px;
+    }
+
+    form {
+      display: grid;
+      gap: 16px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 7px;
+      color: var(--navy);
+      font-size: 13px;
+      font-weight: 800;
+    }
+
+    input[type=text],
+    input[type=tel] {
+      width: 100%;
+      height: 50px;
+      padding: 0 15px;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      background: #fff;
+      color: var(--ink);
+      font: 500 15px Inter, Arial, sans-serif;
+      outline: none;
+    }
+
+    input[type=text]:focus,
+    input[type=tel]:focus {
+      border-color: var(--orange);
+      box-shadow: 0 0 0 3px rgba(239, 106, 27, .12);
+    }
+
+    .consent {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.5;
+    }
+
+    .consent input {
+      margin-top: 3px;
+      accent-color: var(--orange);
+      flex: 0 0 auto;
+    }
+
+    .submit {
+      width: 100%;
+      min-height: 52px;
+      border: 0;
+      border-radius: 999px;
+      background: var(--orange);
+      color: #fff;
+      font: 800 15px Inter, Arial, sans-serif;
+      cursor: pointer;
+      transition: .2s;
+    }
+
+    .submit:hover {
+      transform: translateY(-2px);
+      filter: brightness(1.04);
+    }
+
+    .note {
+      margin: 18px 0 0;
+      color: var(--muted);
+      font-size: 11px;
+      line-height: 1.5;
+      text-align: center;
+    }
+
+    footer {
+      background: var(--navy2);
+      color: #9eb3c0;
+      padding: 25px 20px;
+      text-align: center;
+      font-size: 12px;
+    }
+
+    @media(max-width:600px) {
+      nav {
+        min-height: 68px;
+      }
+
+      .brand img {
+        width: 125px;
+      }
+
+      .back-link {
+        font-size: 12px;
+      }
+
+      main {
+        padding: 45px 15px;
+      }
+
+      .card {
+        padding: 24px 20px;
+      }
+    }
   </style>
 </head>
+
 <body>
   <header>
     <nav>
@@ -52,10 +262,12 @@
     <section class="club">
       <div class="kicker">KLUB FRANGO</div>
       <h1>Dołącz do <span>Klubu</span></h1>
-      <p class="intro">Zostaw nam swoje dane i dołącz do Klubu Frango. Otrzymasz od nas informacje o specjalnych promocjach i ofertach.</p>
+      <p class="intro">Zostaw nam swoje dane i dołącz do Klubu Frango. Otrzymasz od nas informacje o specjalnych
+        promocjach i ofertach.</p>
       <div class="card">
         <div class="benefits">
-          <div class="benefit"><span class="benefit-icon">✓</span><span>Specjalne promocje dla członków Klubu Frango</span></div>
+          <div class="benefit"><span class="benefit-icon">✓</span><span>Specjalne promocje dla członków Klubu
+              Frango</span></div>
           <div class="benefit"><span class="benefit-icon">✓</span><span>Informacje o wyjątkowych ofertach</span></div>
         </div>
         <form id="clubForm">
@@ -65,15 +277,18 @@
           </div>
           <div>
             <label for="phone">Numer telefonu</label>
-            <input id="phone" name="phone" type="tel" inputmode="numeric" autocomplete="tel" placeholder="9-cyfrowy numer telefonu" maxlength="9" required>
+            <input id="phone" name="phone" type="tel" inputmode="numeric" autocomplete="tel"
+              placeholder="9-cyfrowy numer telefonu" maxlength="9" required>
           </div>
           <label class="consent">
             <input id="marketingConsent" name="marketingConsent" type="checkbox" required>
-            <span>Wyrażam zgodę na otrzymywanie od Frango informacji marketingowych w formie wiadomości SMS na podany numer telefonu.</span>
+            <span>Wyrażam zgodę na otrzymywanie od Frango informacji marketingowych w formie wiadomości SMS na podany
+              numer telefonu.</span>
           </label>
           <button class="submit" type="submit">DOŁĄCZ DO KLUBU FRANGO</button>
         </form>
-        <p class="note">Podanie danych jest dobrowolne. Szczegóły dotyczące przetwarzania danych przedstawimy przed uruchomieniem formularza produkcyjnego.</p>
+        <p class="note">Podanie danych jest dobrowolne. Szczegóły dotyczące przetwarzania danych przedstawimy przed
+          uruchomieniem formularza produkcyjnego.</p>
       </div>
     </section>
   </main>
@@ -85,4 +300,5 @@
     });
   </script>
 </body>
+
 </html>
