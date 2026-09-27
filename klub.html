@@ -4,9 +4,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Dołącz do Klubu Frango i korzystaj ze specjalnych promocji.">
+  <meta name="description" data-i18n-meta="meta.description" content="">
   <meta name="theme-color" content="#0b2f4a">
-  <title>Klub Frango – Dołącz do nas</title>
+  <title data-i18n="club.meta.title">Klub Frango – Dołącz do nas</title>
+  <script src="js/i18n.js" defer></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -66,6 +67,52 @@
 
     .back-link:hover {
       color: var(--lime);
+    }
+
+    .lang-switcher {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .lang-btn {
+      border: 0;
+      background: transparent;
+      color: rgba(255, 255, 255, .65);
+      font: 700 12px Inter, Arial, sans-serif;
+      padding: 5px 4px;
+      cursor: pointer;
+    }
+
+    .lang-btn.active {
+      color: var(--lime);
+    }
+
+    .lang-btn:hover {
+      color: #fff;
+    }
+
+
+    .lang-switcher {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .lang-btn {
+      border: 0;
+      background: transparent;
+      color: #fff;
+      padding: 6px 7px;
+      border-radius: 6px;
+      font: 700 11px Inter, Arial, sans-serif;
+      cursor: pointer;
+      opacity: .65;
+    }
+
+    .lang-btn.active {
+      opacity: 1;
+      background: rgba(255, 255, 255, .12);
     }
 
     main {
@@ -240,6 +287,10 @@
         font-size: 12px;
       }
 
+      .lang-switcher {
+        gap: 1px;
+      }
+
       main {
         padding: 45px 15px;
       }
@@ -254,49 +305,107 @@
 <body>
   <header>
     <nav>
-      <a class="brand" href="index.html"><img src="logo.png" alt="Frango Grillowany Kurczak"></a>
-      <a class="back-link" href="index.html">← Wróć na stronę Frango</a>
+      <a class="brand" href="index.html"><img src="logo.png" data-i18n-alt="common.logoAlt" alt="Frango Grillowany Kurczak"></a>
+      <div style="display:flex;align-items:center;gap:14px;">
+        <div class="lang-switcher" aria-label="Language">
+          <button class="lang-btn active" data-lang="pl" type="button">PL</button>
+          <button class="lang-btn" data-lang="en" type="button">EN</button>
+          <button class="lang-btn" data-lang="pt" type="button">PT</button>
+        </div>
+        <a class="back-link" href="index.html" data-i18n="club.back">← Wróć na stronę Frango</a>
+      </div>
     </nav>
   </header>
   <main>
     <section class="club">
-      <div class="kicker">KLUB FRANGO</div>
-      <h1>Dołącz do <span>Klubu</span></h1>
-      <p class="intro">Zostaw nam swoje dane i dołącz do Klubu Frango. Otrzymasz od nas informacje o specjalnych
-        promocjach i ofertach.</p>
+      <div class="kicker" data-i18n="club.kicker">KLUB FRANGO</div>
+      <h1><span data-i18n="club.titleBefore">Dołącz do</span> <span data-i18n="club.titleAccent">Klubu</span></h1>
+      <p class="intro" data-i18n="club.intro">Zostaw nam swoje dane i dołącz do Klubu Frango. Otrzymasz od nas informacje o specjalnych promocjach i ofertach.</p>
       <div class="card">
         <div class="benefits">
-          <div class="benefit"><span class="benefit-icon">✓</span><span>Specjalne promocje dla członków Klubu
-              Frango</span></div>
-          <div class="benefit"><span class="benefit-icon">✓</span><span>Informacje o wyjątkowych ofertach</span></div>
+          <div class="benefit"><span class="benefit-icon">✓</span><span data-i18n="club.benefit1">Specjalne promocje dla członków Klubu Frango</span></div>
+          <div class="benefit"><span class="benefit-icon">✓</span><span data-i18n="club.benefit2">Informacje o wyjątkowych ofertach</span></div>
         </div>
         <form id="clubForm">
           <div>
-            <label for="name">Imię</label>
-            <input id="name" name="name" type="text" autocomplete="given-name" placeholder="Twoje imię" required>
+            <label for="name" data-i18n="club.nameLabel">Imię</label>
+            <input id="name" name="name" type="text" autocomplete="given-name" data-i18n-placeholder="club.namePlaceholder" placeholder="Twoje imię" data-i18n-placeholder="club.namePlaceholder" required>
           </div>
           <div>
-            <label for="phone">Numer telefonu</label>
+            <label for="phone" data-i18n="club.phoneLabel">Numer telefonu</label>
             <input id="phone" name="phone" type="tel" inputmode="numeric" autocomplete="tel"
-              placeholder="9-cyfrowy numer telefonu" maxlength="9" required>
+              data-i18n-placeholder="club.phonePlaceholder" placeholder="9-cyfrowy numer telefonu" data-i18n-placeholder="club.phonePlaceholder" maxlength="9" required>
           </div>
           <label class="consent">
             <input id="marketingConsent" name="marketingConsent" type="checkbox" required>
-            <span>Wyrażam zgodę na otrzymywanie od Frango informacji marketingowych w formie wiadomości SMS na podany
-              numer telefonu.</span>
+            <span data-i18n="club.consent">Wyrażam zgodę na otrzymywanie od Frango informacji marketingowych w formie wiadomości SMS na podany numer telefonu.</span>
           </label>
-          <button class="submit" type="submit">DOŁĄCZ DO KLUBU FRANGO</button>
+          <button class="submit" type="submit" data-i18n="club.submit">DOŁĄCZ DO KLUBU FRANGO</button>
         </form>
-        <p class="note">Podanie danych jest dobrowolne. Szczegóły dotyczące przetwarzania danych przedstawimy przed
-          uruchomieniem formularza produkcyjnego.</p>
+        <p class="note" data-i18n="club.note">Podanie danych jest dobrowolne. Szczegóły dotyczące przetwarzania danych przedstawimy przed uruchomieniem formularza produkcyjnego.</p>
       </div>
     </section>
   </main>
-  <footer>© 2026 Frango Grillowany Kurczak</footer>
-  <script>
-    document.getElementById('clubForm').addEventListener('submit', function (event) {
+  <footer data-i18n="club.footer">© 2026 Frango Grillowany Kurczak</footer>
+  <script src="js/i18n.js" defer></script>
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/12.3.0/firebase-app.js";
+    import { getAuth, signInAnonymously } from "https://www.gstatic.com/firebasejs/12.3.0/firebase-auth.js";
+    import { getFirestore, doc, setDoc } from "https://www.gstatic.com/firebasejs/12.3.0/firebase-firestore.js";
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyC0aU4xJazx92DaL-ZFYX2I8R2dAhmzDug",
+      authDomain: "frango-61397.firebaseapp.com",
+      projectId: "frango-61397",
+      storageBucket: "frango-61397.firebasestorage.app",
+      messagingSenderId: "687192629537",
+      appId: "1:687192629537:web:66760bc8512f2096eb1e60"
+    };
+
+    const app = initializeApp(firebaseConfig);
+    const auth = getAuth(app);
+    const db = getFirestore(app);
+
+    signInAnonymously(auth)
+      .then(() => {
+        console.log("Firebase Anonymous Auth OK");
+      })
+      .catch((error) => {
+        console.error("Firebase Auth error:", error);
+      });
+
+    document.getElementById('clubForm').addEventListener('submit', async function (event) {
       event.preventDefault();
-      alert('Formularz jest gotowy. W kolejnym kroku podłączymy go do Firebase.');
+
+      const name = document.getElementById('name').value.trim();
+      const phone = document.getElementById('phone').value.trim();
+      const marketingConsent = document.getElementById('marketingConsent').checked;
+
+      if (!name || !/^\d{9}$/.test(phone) || !marketingConsent) {
+        alert(window.frangoTranslations?.club?.validation || 'Sprawdź dane formularza.');
+        return;
+      }
+
+      try {
+        await setDoc(doc(db, 'customers', phone), {
+          name: name,
+          phone: phone,
+          marketingConsent: true,
+          createdAt: Date.now()
+        });
+
+        alert(window.frangoTranslations?.club?.success || 'Witamy w Klubie Frango! 🎉');
+        document.getElementById('clubForm').reset();
+
+      } catch (error) {
+        console.error(error);
+
+        if (error.code === 'permission-denied') {
+          alert(window.frangoTranslations?.club?.duplicate || 'Ten numer telefonu jest już zapisany w Klubie Frango.');
+        } else {
+          alert(window.frangoTranslations?.club?.error || 'Nie udało się zapisać danych. Spróbuj ponownie.');
+        }
+      }
     });
   </script>
 </body>

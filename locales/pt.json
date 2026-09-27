@@ -133,5 +133,26 @@
   },
   "footer": {
     "copyright": "© 2026 Frango Grelhado"
+  },
+  "club": {
+    "kicker": "CLUBE FRANGO",
+    "titleBefore": "Junte-se ao",
+    "titleAccent": "Clube",
+    "intro": "Deixe-nos os seus dados e junte-se ao Clube Frango. Receberá informações sobre promoções especiais e ofertas.",
+    "benefit1": "Promoções especiais para membros do Clube Frango",
+    "benefit2": "Informações sobre ofertas exclusivas",
+    "nameLabel": "Nome",
+    "namePlaceholder": "O seu nome",
+    "phoneLabel": "Número de telefone",
+    "phonePlaceholder": "Número de telefone com 9 dígitos",
+    "consent": "Aceito receber informações de marketing da Frango por SMS para o número de telefone indicado.",
+    "submit": "JUNTAR-ME AO CLUBE FRANGO",
+    "note": "O fornecimento dos dados é voluntário. As informações sobre o tratamento dos dados serão apresentadas antes do lançamento do formulário de produção.",
+    "back": "← Voltar ao Frango",
+    "footer": "© 2026 Frango Frango Grelhado",
+    "validation": "Verifique os dados do formulário.",
+    "success": "Bem-vindo ao Clube Frango! 🎉",
+    "duplicate": "Este número de telefone já está registado no Clube Frango.",
+    "error": "Não foi possível guardar os dados. Tente novamente."
   }
 }

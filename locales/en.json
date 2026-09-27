@@ -134,5 +134,26 @@
   },
   "footer": {
     "copyright": "© 2026 Frango Grilled Chicken"
+  },
+  "club": {
+    "kicker": "FRANGO CLUB",
+    "titleBefore": "Join the",
+    "titleAccent": "Club",
+    "intro": "Leave us your details and join the Frango Club. You will receive information about special promotions and offers.",
+    "benefit1": "Special promotions for Frango Club members",
+    "benefit2": "Information about exclusive offers",
+    "nameLabel": "First name",
+    "namePlaceholder": "Your first name",
+    "phoneLabel": "Phone number",
+    "phonePlaceholder": "9-digit phone number",
+    "consent": "I agree to receive marketing information from Frango by SMS at the phone number provided.",
+    "submit": "JOIN THE FRANGO CLUB",
+    "note": "Providing your details is voluntary. Information about data processing will be provided before the production form is launched.",
+    "back": "← Back to Frango",
+    "footer": "© 2026 Frango Grilled Chicken",
+    "validation": "Please check the form details.",
+    "success": "Welcome to the Frango Club! 🎉",
+    "duplicate": "This phone number is already registered in the Frango Club.",
+    "error": "The data could not be saved. Please try again."
   }
 }

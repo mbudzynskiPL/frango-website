@@ -15,6 +15,7 @@
 
   function applyTranslations(translations, lang) {
     document.documentElement.lang = lang;
+    window.frangoTranslations = translations;
 
     document.querySelectorAll("[data-i18n]").forEach((element) => {
       const value = getValue(translations, element.dataset.i18n);
@@ -31,6 +32,11 @@
       if (value !== undefined) element.setAttribute("content", value);
     });
 
+    document.querySelectorAll("[data-i18n-placeholder]").forEach((element) => {
+      const value = getValue(translations, element.dataset.i18nPlaceholder);
+      if (value !== undefined) element.setAttribute("placeholder", value);
+    });
+
     const title = getValue(translations, "meta.title");
     if (title) document.title = title;
 
@@ -41,6 +47,10 @@
     });
 
     try { localStorage.setItem(storageKey, lang); } catch (_) {}
+
+    window.dispatchEvent(new CustomEvent("frango-language-changed", {
+      detail: { lang, translations }
+    }));
   }
 
   async function setLanguage(lang) {

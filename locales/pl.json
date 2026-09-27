@@ -133,5 +133,26 @@
   },
   "footer": {
     "copyright": "© 2026 Frango Grillowany Kurczak"
+  },
+  "club": {
+    "kicker": "KLUB FRANGO",
+    "titleBefore": "Dołącz do",
+    "titleAccent": "Klubu",
+    "intro": "Zostaw nam swoje dane i dołącz do Klubu Frango. Otrzymasz od nas informacje o specjalnych promocjach i ofertach.",
+    "benefit1": "Specjalne promocje dla członków Klubu Frango",
+    "benefit2": "Informacje o wyjątkowych ofertach",
+    "nameLabel": "Imię",
+    "namePlaceholder": "Twoje imię",
+    "phoneLabel": "Numer telefonu",
+    "phonePlaceholder": "9-cyfrowy numer telefonu",
+    "consent": "Wyrażam zgodę na otrzymywanie od Frango informacji marketingowych w formie wiadomości SMS na podany numer telefonu.",
+    "submit": "DOŁĄCZ DO KLUBU FRANGO",
+    "note": "Podanie danych jest dobrowolne. Szczegóły dotyczące przetwarzania danych przedstawimy przed uruchomieniem formularza produkcyjnego.",
+    "back": "← Wróć na stronę Frango",
+    "footer": "© 2026 Frango Grillowany Kurczak",
+    "validation": "Sprawdź dane formularza.",
+    "success": "Witamy w Klubie Frango! 🎉",
+    "duplicate": "Ten numer telefonu jest już zapisany w Klubie Frango.",
+    "error": "Nie udało się zapisać danych. Spróbuj ponownie."
   }
 }
