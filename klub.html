@@ -266,6 +266,54 @@
       text-align: center;
     }
 
+    .policy-link {
+      color: var(--navy);
+      text-decoration: underline;
+      font-weight: 700;
+    }
+
+    .policy-link:hover { color: var(--orange); }
+
+    .policy-modal {
+      position: fixed;
+      inset: 0;
+      z-index: 1000;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      background: rgba(3, 20, 32, .72);
+    }
+
+    .policy-modal.open { display: flex; }
+
+    .policy-dialog {
+      width: min(760px, 100%);
+      max-height: min(85vh, 900px);
+      overflow: auto;
+      background: #fff;
+      color: var(--ink);
+      border-radius: 18px;
+      padding: 28px;
+      box-shadow: 0 20px 70px rgba(0,0,0,.3);
+      line-height: 1.6;
+      font-size: 14px;
+    }
+
+    .policy-dialog h2 { margin: 0 45px 18px 0; color: var(--navy); }
+    .policy-dialog h3 { margin: 20px 0 6px; color: var(--navy); font-size: 15px; }
+    .policy-dialog p { margin: 7px 0; }
+    .policy-close {
+      float: right;
+      border: 0;
+      border-radius: 999px;
+      background: var(--navy);
+      color: #fff;
+      padding: 9px 15px;
+      font-weight: 700;
+      cursor: pointer;
+    }
+
     footer {
       background: var(--navy2);
       color: #9eb3c0;
@@ -338,7 +386,7 @@
           </div>
           <label class="consent">
             <input id="marketingConsent" name="marketingConsent" type="checkbox" required>
-            <span data-i18n="club.consent">Wyrażam zgodę na otrzymywanie od Frango informacji marketingowych w formie wiadomości SMS na podany numer telefonu.</span>
+            <span><span data-i18n="club.consent">Wyrażam zgodę na otrzymywanie od Frango informacji marketingowych w formie wiadomości SMS na podany numer telefonu.</span> <a class="policy-link" href="#privacy-policy" id="openPolicy" data-policy-link>Polityka prywatności</a></span>
           </label>
           <button class="submit" type="submit" data-i18n="club.submit">DOŁĄCZ DO KLUBU FRANGO</button>
         </form>
@@ -347,7 +395,82 @@
     </section>
   </main>
   <footer data-i18n="club.footer">© 2026 Frango Grillowany Kurczak</footer>
+
+  <div class="policy-modal" id="policyModal" aria-hidden="true">
+    <section class="policy-dialog" role="dialog" aria-modal="true" aria-labelledby="policyTitle">
+      <button class="policy-close" type="button" id="closePolicy" data-policy-close>Zamknij ✕</button>
+      <h2 id="policyTitle">Polityka prywatności Klubu Frango</h2>
+      <div id="policyContent">
+        <p><strong>Administrator danych:</strong> Frango sp. z o.o., ul. Hoża 29, 00-521 Warszawa, KRS 0001236971, NIP 7011310452. Kontakt: info@frangogrill.pl.</p>
+        <h3>1. Jakie dane i w jakim celu przetwarzamy?</h3>
+        <p>Przetwarzamy imię i numer telefonu w celu obsługi zapisu do Klubu Frango oraz — po uzyskaniu zgody — wysyłania wiadomości SMS o promocjach, rabatach, ofertach specjalnych i nowościach.</p>
+        <h3>2. Podstawa prawna</h3>
+        <p>Dane do marketingu przetwarzamy na podstawie zgody, zgodnie z art. 6 ust. 1 lit. a RODO. Wysyłka marketingowych SMS wymaga uprzedniej zgody zgodnie z art. 398 ustawy Prawo komunikacji elektronicznej. W ograniczonym zakresie możemy przechowywać informacje o zgodzie i jej cofnięciu w celu wykazania zgodności z prawem lub obrony przed roszczeniami.</p>
+        <h3>3. Dobrowolność i wycofanie zgody</h3>
+        <p>Podanie danych jest dobrowolne, ale konieczne do zapisania się do Klubu. Zgodę na marketing SMS można wycofać w dowolnym momencie, wysyłając wiadomość na info@frangogrill.pl lub korzystając z formularza kontaktowego na stronie Frango. Wycofanie zgody nie wpływa na zgodność z prawem wcześniejszego przetwarzania.</p>
+        <h3>4. Okres przechowywania</h3>
+        <p>Dane wykorzystywane do marketingu przechowujemy do czasu cofnięcia zgody lub rezygnacji z Klubu. Ograniczone informacje potrzebne do udokumentowania zgody, obsługi rezygnacji i zapobiegania dalszym wysyłkom możemy zachować przez okres uzasadniony tymi celami lub wymagany prawem.</p>
+        <h3>5. Odbiorcy i lokalizacja danych</h3>
+        <p>Korzystamy z usług Firebase świadczonych przez Google, w tym Cloud Firestore oraz Firebase Authentication. Baza Cloud Firestore jest skonfigurowana w regionie europe-central2 (Warszawa, Polska). Klienci nie zakładają kont Firebase; Authentication służy do obsługi systemu przez Frango.</p>
+        <p>Google może przetwarzać dane w zakresie niezbędnym do świadczenia, utrzymania i zabezpieczenia usług. W zależności od właściwych warunków usługi dane mogą być przetwarzane również w innych lokalizacjach, w których Google lub jego podwykonawcy prowadzą działalność. W przypadku transferów poza EOG stosuje się mechanizmy wymagane przez RODO, jeżeli są konieczne.</p>
+        <h3>6. Twoje prawa</h3>
+        <p>Na zasadach określonych w RODO możesz żądać dostępu do danych, ich sprostowania, usunięcia lub ograniczenia przetwarzania, a także przeniesienia danych, gdy ma to zastosowanie. Możesz cofnąć zgodę w dowolnym momencie. W zakresie przewidzianym prawem możesz również wnieść sprzeciw. W sprawach danych osobowych napisz na info@frangogrill.pl.</p>
+        <p>Masz prawo złożyć skargę do Prezesa Urzędu Ochrony Danych Osobowych, jeżeli uważasz, że dane są przetwarzane niezgodnie z prawem.</p>
+        <h3>7. Zautomatyzowane decyzje i zmiany</h3>
+        <p>Nie podejmujemy wobec uczestników decyzji wywołujących skutki prawne lub podobnie istotne skutki wyłącznie w sposób zautomatyzowany. Polityka może być aktualizowana; jej aktualna wersja jest publikowana na stronie Frango.</p>
+        <p><strong>Ważne:</strong> zaznaczenie pola formularza oznacza zgodę na marketing SMS. Link pozwala zapoznać się z polityką prywatności — sama polityka nie jest odrębną zgodą marketingową.</p>
+      </div>
+    </section>
+  </div>
+
   <script src="js/i18n.js" defer></script>
+  <script>
+    (() => {
+      const modal = document.getElementById('policyModal');
+      const openLink = document.getElementById('openPolicy');
+      const closeButton = document.getElementById('closePolicy');
+      const policyTitle = document.getElementById('policyTitle');
+      const policyContent = document.getElementById('policyContent');
+      const translations = {
+        pl: {
+          link: 'Polityka prywatności', close: 'Zamknij ✕', title: 'Polityka prywatności Klubu Frango',
+          html: `<p><strong>Administrator danych:</strong> Frango sp. z o.o., ul. Hoża 29, 00-521 Warszawa, KRS 0001236971, NIP 7011310452. Kontakt: info@frangogrill.pl.</p><h3>1. Jakie dane i w jakim celu przetwarzamy?</h3><p>Przetwarzamy imię i numer telefonu w celu obsługi zapisu do Klubu Frango oraz — po uzyskaniu zgody — wysyłania wiadomości SMS o promocjach, rabatach, ofertach specjalnych i nowościach.</p><h3>2. Podstawa prawna</h3><p>Dane do marketingu przetwarzamy na podstawie zgody, zgodnie z art. 6 ust. 1 lit. a RODO. Wysyłka marketingowych SMS wymaga uprzedniej zgody zgodnie z art. 398 ustawy Prawo komunikacji elektronicznej. W ograniczonym zakresie możemy przechowywać informacje o zgodzie i jej cofnięciu w celu wykazania zgodności z prawem lub obrony przed roszczeniami.</p><h3>3. Dobrowolność i wycofanie zgody</h3><p>Podanie danych jest dobrowolne, ale konieczne do zapisania się do Klubu. Zgodę na marketing SMS można wycofać w dowolnym momencie, wysyłając wiadomość na info@frangogrill.pl lub korzystając z formularza kontaktowego na stronie Frango. Wycofanie zgody nie wpływa na zgodność z prawem wcześniejszego przetwarzania.</p><h3>4. Okres przechowywania</h3><p>Dane wykorzystywane do marketingu przechowujemy do czasu cofnięcia zgody lub rezygnacji z Klubu. Ograniczone informacje potrzebne do udokumentowania zgody, obsługi rezygnacji i zapobiegania dalszym wysyłkom możemy zachować przez okres uzasadniony tymi celami lub wymagany prawem.</p><h3>5. Odbiorcy i lokalizacja danych</h3><p>Korzystamy z usług Firebase świadczonych przez Google, w tym Cloud Firestore oraz Firebase Authentication. Baza Cloud Firestore jest skonfigurowana w regionie europe-central2 (Warszawa, Polska). Klienci nie zakładają kont Firebase; Authentication służy do obsługi systemu przez Frango.</p><p>Google może przetwarzać dane w zakresie niezbędnym do świadczenia, utrzymania i zabezpieczenia usług. W zależności od właściwych warunków usługi dane mogą być przetwarzane również w innych lokalizacjach, w których Google lub jego podwykonawcy prowadzą działalność. W przypadku transferów poza EOG stosuje się mechanizmy wymagane przez RODO, jeżeli są konieczne.</p><h3>6. Twoje prawa</h3><p>Na zasadach określonych w RODO możesz żądać dostępu do danych, ich sprostowania, usunięcia lub ograniczenia przetwarzania, a także przeniesienia danych, gdy ma to zastosowanie. Możesz cofnąć zgodę w dowolnym momencie. W zakresie przewidzianym prawem możesz również wnieść sprzeciw. W sprawach danych osobowych napisz na info@frangogrill.pl.</p><p>Masz prawo złożyć skargę do Prezesa Urzędu Ochrony Danych Osobowych, jeżeli uważasz, że dane są przetwarzane niezgodnie z prawem.</p><h3>7. Zautomatyzowane decyzje i zmiany</h3><p>Nie podejmujemy wobec uczestników decyzji wywołujących skutki prawne lub podobnie istotne skutki wyłącznie w sposób zautomatyzowany. Polityka może być aktualizowana; jej aktualna wersja jest publikowana na stronie Frango.</p><p><strong>Ważne:</strong> zaznaczenie pola formularza oznacza zgodę na marketing SMS. Link pozwala zapoznać się z polityką prywatności — sama polityka nie jest odrębną zgodą marketingową.</p>`
+        },
+        en: {
+          link: 'Privacy policy', close: 'Close ✕', title: 'Frango Club Privacy Policy',
+          html: `<p><strong>Data controller:</strong> Frango sp. z o.o., ul. Hoża 29, 00-521 Warsaw, Poland, KRS 0001236971, NIP 7011310452. Contact: info@frangogrill.pl.</p><h3>1. Data and purposes</h3><p>We process your first name and phone number to register you for Frango Club and, after obtaining your consent, to send SMS messages about promotions, discounts, special offers and news.</p><h3>2. Legal basis</h3><p>Marketing data processing is based on your consent under Article 6(1)(a) GDPR. Marketing SMS requires prior consent under Article 398 of the Polish Electronic Communications Law. We may retain limited records of consent and its withdrawal where necessary to demonstrate compliance or defend legal claims.</p><h3>3. Voluntary consent and withdrawal</h3><p>Providing data is voluntary but necessary to join the Club. You can withdraw SMS marketing consent at any time by emailing info@frangogrill.pl or using the contact form on the Frango website. Withdrawal does not affect the lawfulness of processing before withdrawal.</p><h3>4. Retention</h3><p>Marketing data is retained until you withdraw consent or leave the Club. Limited records needed to document consent, handle withdrawal and prevent further messages may be retained for a period justified by those purposes or required by law.</p><h3>5. Recipients and data location</h3><p>We use Google Firebase services, including Cloud Firestore and Firebase Authentication. The Cloud Firestore database is configured in region europe-central2 (Warsaw, Poland). Customers do not create Firebase accounts; Authentication is used by Frango to operate the system.</p><p>Google may process data as necessary to provide, maintain and secure the services. Depending on the applicable service terms, data may also be processed in other locations where Google or its subprocessors operate. Where transfers outside the EEA occur, the safeguards required by GDPR are used where necessary.</p><h3>6. Your rights</h3><p>Subject to GDPR conditions, you may request access, rectification, erasure or restriction of processing, and data portability where applicable. You may withdraw consent at any time and, where provided by law, object to processing. Contact info@frangogrill.pl.</p><p>You may lodge a complaint with the President of the Polish Personal Data Protection Office if you believe your data is processed unlawfully.</p><h3>7. Automated decisions and changes</h3><p>We do not make decisions producing legal or similarly significant effects solely by automated means. This policy may be updated; the current version is published on the Frango website.</p><p><strong>Important:</strong> ticking the form checkbox gives consent to SMS marketing. This link lets you read the privacy policy; the policy itself is not a separate marketing consent.</p>`
+        },
+        pt: {
+          link: 'Política de privacidade', close: 'Fechar ✕', title: 'Política de Privacidade do Clube Frango',
+          html: `<p><strong>Responsável pelo tratamento:</strong> Frango sp. z o.o., ul. Hoża 29, 00-521 Varsóvia, Polónia, KRS 0001236971, NIP 7011310452. Contacto: info@frangogrill.pl.</p><h3>1. Dados e finalidades</h3><p>Tratamos o seu nome e número de telefone para registar a sua adesão ao Clube Frango e, após obter o seu consentimento, enviar SMS sobre promoções, descontos, ofertas especiais e novidades.</p><h3>2. Fundamento jurídico</h3><p>O tratamento para marketing baseia-se no seu consentimento, nos termos do artigo 6.º, n.º 1, alínea a), do RGPD. O envio de SMS de marketing exige consentimento prévio nos termos do artigo 398.º da lei polaca das comunicações eletrónicas. Podemos conservar registos limitados do consentimento e da sua retirada quando necessário para demonstrar conformidade ou defender reclamações.</p><h3>3. Consentimento voluntário e retirada</h3><p>O fornecimento dos dados é voluntário, mas necessário para aderir ao Clube. Pode retirar o consentimento para SMS de marketing a qualquer momento, escrevendo para info@frangogrill.pl ou utilizando o formulário de contacto no site Frango. A retirada não afeta a licitude do tratamento anterior.</p><h3>4. Conservação</h3><p>Conservamos os dados de marketing até à retirada do consentimento ou saída do Clube. Registos limitados necessários para documentar o consentimento, tratar a retirada e impedir novas mensagens podem ser conservados durante o período justificado por esses fins ou exigido por lei.</p><h3>5. Destinatários e localização dos dados</h3><p>Utilizamos serviços Firebase fornecidos pela Google, incluindo Cloud Firestore e Firebase Authentication. A base Cloud Firestore está configurada na região europe-central2 (Varsóvia, Polónia). Os clientes não criam contas Firebase; a autenticação é utilizada pela Frango para operar o sistema.</p><p>A Google pode tratar dados conforme necessário para fornecer, manter e proteger os serviços. Dependendo dos termos aplicáveis, os dados também podem ser tratados noutros locais onde a Google ou os seus subcontratantes operam. Quando ocorram transferências para fora do EEE, são utilizadas as garantias exigidas pelo RGPD, quando necessário.</p><h3>6. Os seus direitos</h3><p>Nos termos do RGPD, pode solicitar acesso, retificação, apagamento ou limitação do tratamento, bem como portabilidade quando aplicável. Pode retirar o consentimento a qualquer momento e, quando previsto na lei, opor-se ao tratamento. Contacto: info@frangogrill.pl.</p><p>Pode apresentar reclamação à autoridade polaca de proteção de dados pessoais se considerar que os seus dados são tratados ilegalmente.</p><h3>7. Decisões automatizadas e alterações</h3><p>Não tomamos decisões com efeitos jurídicos ou efeitos igualmente significativos exclusivamente por meios automatizados. Esta política pode ser atualizada; a versão atual será publicada no site Frango.</p><p><strong>Importante:</strong> ao marcar a caixa do formulário, consente o marketing por SMS. Este link permite consultar a política de privacidade; a própria política não constitui um consentimento de marketing separado.</p>`
+        }
+      };
+      function applyPolicyLanguage() {
+        const lang = document.documentElement.lang || 'pl';
+        const t = translations[lang] || translations.pl;
+        openLink.textContent = t.link;
+        closeButton.textContent = t.close;
+        policyTitle.textContent = t.title;
+        policyContent.innerHTML = t.html;
+      }
+      openLink.addEventListener('click', (event) => {
+        event.preventDefault();
+        applyPolicyLanguage();
+        modal.classList.add('open');
+        modal.setAttribute('aria-hidden', 'false');
+        closeButton.focus();
+      });
+      function closePolicy() {
+        modal.classList.remove('open');
+        modal.setAttribute('aria-hidden', 'true');
+        openLink.focus();
+      }
+      closeButton.addEventListener('click', closePolicy);
+      modal.addEventListener('click', (event) => { if (event.target === modal) closePolicy(); });
+      document.addEventListener('keydown', (event) => { if (event.key === 'Escape' && modal.classList.contains('open')) closePolicy(); });
+      document.querySelectorAll('.lang-btn').forEach(button => button.addEventListener('click', () => setTimeout(applyPolicyLanguage, 0)));
+    })();
+  </script>
   <script type="module">
     import { initializeApp } from "https://www.gstatic.com/firebasejs/12.3.0/firebase-app.js";
     import { getAuth, signInAnonymously } from "https://www.gstatic.com/firebasejs/12.3.0/firebase-auth.js";
