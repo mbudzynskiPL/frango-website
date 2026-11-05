@@ -258,6 +258,9 @@
     }
 
     .btn {
+      font-family: inherit;
+      font-size: inherit;
+      line-height: 1.2;
       display: inline-flex;
       align-items: center;
       justify-content: center;
@@ -890,6 +893,48 @@
         margin-bottom: 12px
       }
     }
+
+    .navlinks .nav-order {
+      appearance: none;
+      border: 0;
+      background: var(--orange);
+      color: #fff;
+      font: inherit;
+      font-weight: 900;
+      letter-spacing: .3px;
+      cursor: pointer;
+      padding: 12px 22px;
+      border-radius: 999px;
+      box-shadow: 0 5px 16px rgba(239, 106, 27, .32);
+      transition: transform .2s ease, box-shadow .2s ease, background .2s ease;
+    }
+
+    .navlinks .nav-order:hover {
+      background: #ff7a2b;
+      color: #fff;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(239, 106, 27, .4);
+    }
+
+    .navlinks .nav-order:focus-visible {
+      outline: 3px solid var(--lime);
+      outline-offset: 3px;
+    }
+
+    .order-goorder-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin: 4px 0 14px;
+      border: 0;
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    .order-goorder-button:hover {
+      filter: brightness(1.06);
+      transform: translateY(-2px);
+    }
   </style>
 
   <style>
@@ -932,21 +977,19 @@
   ],
   "priceRange": "$$",
   "openingHoursSpecification": [
-    {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": [
-        "Monday",
-        "Tuesday",
-        "Wednesday",
-        "Thursday",
-        "Friday",
-        "Saturday",
-        "Sunday"
-      ],
-      "opens": "11:00",
-      "closes": "21:00"
-    }
-  ],
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday"],
+        "opens": "11:00",
+        "closes": "21:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Friday", "Saturday"],
+        "opens": "11:00",
+        "closes": "21:30"
+      }
+    ],
   "sameAs": [
     "https://www.instagram.com/frango.grillowanykurczak/"
   ]
@@ -960,8 +1003,9 @@
     <nav class="container"><a class="brand" href="#top"><img src="logo.png" alt="Frango Grillowany Kurczak"
           data-i18n-alt="common.logoAlt"></a>
       <div class="navlinks"><a href="#menu" data-i18n="nav.menu">Menu</a><a href="#frango" data-i18n="nav.about">O
-          nas</a><a href="#galeria" data-i18n="nav.gallery">Galeria</a><a href="#zamow"
-          data-i18n="nav.order">Zamów</a><a href="#kontakt" data-i18n="nav.contact">Kontakt</a><a class="navbtn"
+          nas</a><a href="#galeria" data-i18n="nav.gallery">Galeria</a><button type="button" class="nav-order goorder"
+          data-goorder-open data-goorder-modal="1" data-src="https://FrangoGrill.goorder.pl"
+          data-i18n="nav.order">Zamów</button><a href="#kontakt" data-i18n="nav.contact">Kontakt</a><a class="navbtn"
           href="tel:+48884213292" data-i18n="nav.phone">📞 884 213 292</a></div>
       <div class="lang-switcher" aria-label="Language"><button class="lang-btn active" data-lang="pl"
           type="button">PL</button><button class="lang-btn" data-lang="en" type="button">EN</button><button
@@ -978,11 +1022,12 @@
         <p data-i18n="hero.description">Zdrowy i świeży kurczak, grillowany w Warszawie w stylu portugalskim.
           Soczyste mięso, chrupiąca skórka, świeże dodatki i charakterne sosy.</p>
         <div class="script" data-i18n="hero.script">Po portugalsku. Po naszemu.</div>
-        <div class="actions"><a class="btn btn-lime" href="#menu" data-i18n="hero.menuButton">ZOBACZ MENU</a><a
-            class="btn btn-primary" href="#zamow" data-i18n="hero.orderButton">ZAMÓW TERAZ</a></div>
+        <div class="actions"><a class="btn btn-lime" href="#menu" data-i18n="hero.menuButton">ZOBACZ MENU</a><button
+            type="button" class="btn btn-primary goorder" data-goorder-open data-goorder-modal="1"
+            data-src="https://FrangoGrill.goorder.pl" data-i18n="hero.orderButton">ZAMÓW TERAZ</button></div>
         <div class="hero-note"><span>🔥 <b data-i18n="hero.noteGrilled">Grillowany na miejscu</b></span><span
-            data-i18n="hero.noteDips">🌶️ Piri-Piri lub 🍋 Lisbon Lime</span><span data-i18n="hero.noteHours">🕐
-            11:00–21:00</span></div>
+            data-i18n="hero.noteDips">🌶️ Piri-Piri lub 🍋 Lisbon Lime</span><span>🕐 Nd–Czw 11:00–21:00 • Pt–Sob
+            11:00–21:30</span></div>
       </div>
     </section>
 
@@ -1133,9 +1178,13 @@
         </div>
         <div class="order-grid">
           <div class="order-card">
-            <h3 data-i18n="order.online.title">Zamów online</h3>
-            <p data-i18n="order.online.description">Frango jest dostępne na <strong>Pyszne, Uber Eats, Wolt, Glovo i
-                Bolt Food</strong>. Aktualne linki do zamówień znajdziesz na naszym profilu Google.</p>
+            <button type="button" class="btn btn-primary goorder order-goorder-button" data-goorder-open
+              data-goorder-modal="1" data-src="https://FrangoGrill.goorder.pl">
+              Zamów online
+            </button>
+            <p>Możesz zamówić bezpośrednio przez nasz system GoOrder. Frango jest dostępne także na
+              <strong>Pyszne, Uber Eats, Wolt, Glovo i Bolt Food</strong>.
+            </p>
             <div class="platforms"><a class="platform"
                 href="https://www.google.com/searchviewer/42?cvd=CLw_EicKJeICIjIgEhkiF9LX29IPEQoNL2cvMTF6ZzdteXF5NhgAOgMI8A0%3D&g2lbs=AEzIGDu1tjXGgtghoWAFFnRC5O9T8MUXIo7Iiwm3B9PerFm747Qw9-qL7AiZuWUKDxQqg3FcjsAAUBKPllwE-GS3jM4f-GDAAA%3D%3D&hl=pl-PL&gl=pl&fo_m=MfohQo559jFvMUOzJVpjPL1YMfZ3bInYwBDuMfaXTPp5KXh-&utm_source=tactile&gei=WF-maqWQKpiDxc8PppDV-Q4&ei=WF-maqWQKpiDxc8PppDV-Q4&fo_s=OA&opi=79508299&ebb=1&cs=0&foub=mcpp"
                 target="_blank" rel="noopener">Pyszne</a><a class="platform"
@@ -1156,7 +1205,7 @@
             <h3 data-i18n="order.pickup.title">Odbiór osobisty</h3>
             <p data-i18n="order.pickup.description">Jesteśmy przy <strong>Alei Solidarności 117</strong>. Zadzwoń i
               zamów z odbiorem.</p><a class="btn btn-primary" href="tel:+48884213292">📞 884 213 292</a>
-            <p><strong data-i18n="common.daily">Codziennie</strong><br>🕐 11:00–21:00</p>
+            <p><strong>Godziny otwarcia</strong><br>Nd–Czw: 11:00–21:00<br>Pt–Sob: 11:00–21:30</p>
           </div>
         </div>
       </div>
@@ -1178,8 +1227,7 @@
                 data-i18n="contact.addressHintLabel">(wejście od Al. Jana Pawła II)</span></p>00-140 Warszawa<p>
               <strong data-i18n="contact.phoneLabel">Telefon</strong><br><a href="tel:+48884213292">📞 884 213 292</a>
             </p>
-            <p><strong data-i18n="contact.hoursLabel">Godziny</strong><br><span
-                data-i18n="common.daily">Codziennie</span> 🕐11:00–21:00</p>
+            <p><strong data-i18n="contact.hoursLabel">Godziny</strong><br>Nd–Czw: 11:00–21:00<br>Pt–Sob: 11:00–21:30</p>
             <p><a href="https://www.instagram.com/frango.grillowanykurczak/" target="_blank" rel="noopener"><svg
                   width="16" height="16" viewBox="0 0 24 24" fill="currentColor"
                   style="display:inline-block;vertical-align:middle;margin-right:6px;">
@@ -1208,23 +1256,28 @@
       <div data-i18n="footer.copyright">© 2026 Frango Grillowany Kurczak</div><a href="tel:+48884213292">884 213 292</a>
     </div>
   </footer>
+  <script src="https://store.goorder.pl/goorder.js"></script>
   <script src="js/i18n.js" defer></script>
 
   <script>
     document.addEventListener('click', function (e) {
-      const link = e.target.closest('a');
-      if (!link || typeof gtag !== 'function') return;
+      const target = e.target;
+      const link = target.closest('a');
+      const goorderButton = target.closest('[data-goorder-open]');
+      if (typeof gtag !== 'function') return;
 
-      const href = link.getAttribute('href') || '';
-      const text = link.textContent.trim().toLowerCase();
+      const href = link ? (link.getAttribute('href') || '') : '';
+      const text = (link || goorderButton || target).textContent.trim().toLowerCase();
 
-      // Zamów teraz
-      if (href === '#zamow' || text.includes('zamów teraz') || text.includes('order now')) {
+      // Zamów teraz / otwarcie sklepu GoOrder
+      if (goorderButton || href === '#zamow' || text.includes('zamów teraz') || text.includes('order now')) {
         gtag('event', 'click_order_now', {
           event_category: 'engagement',
-          event_label: 'Zamów teraz'
+          event_label: 'Zamów online - GoOrder'
         });
       }
+
+      if (!link) return;
 
       // Telefon
       if (href.startsWith('tel:')) {
