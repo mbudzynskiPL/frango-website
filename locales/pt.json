@@ -1,6 +1,6 @@
 {
   "meta": {
-    "title": "Frango Restaurante – Saudável e Fresco Frango Grelhado em Varsóvia",
+    "title": "Frango Restaurante – Frango Grelhado Saudável e Fresco em Varsóvia",
     "description": "Saudável e fresco frango grelhado em Varsóvia no estilo português. Carne suculenta, pele crocante, acompanhamentos frescos e molhos piri-piri e lima. Peça para recolha ou entrega."
   },
   "common": {
@@ -154,5 +154,18 @@
     "success": "Bem-vindo ao Clube Frango! 🎉",
     "duplicate": "Este número de telefone já está registado no Clube Frango.",
     "error": "Não foi possível guardar os dados. Tente novamente."
+  },
+  
+"faq": {
+  "kicker": "FAQ",
+  "title": "Tem dúvidas?",
+  "intro": "Encontre respostas às perguntas mais frequentes sobre o Frango, o nosso frango e as encomendas.",
+  "q1": "O Frango oferece frango de churrasco em Varsóvia?",
+  "a1": "O Frango é uma alternativa ao tradicional frango de churrasco. Preparamos frango fresco e suculento, grelhado no local ao estilo português.",
+  "q2": "Onde posso comer frango grelhado Frango em Varsóvia?",
+  "a2": "Visite-nos na Aleja Solidarności 117, em Varsóvia — cruzamento com a Aleja Jana Pawła II.",
+  "q3": "Posso encomendar Frango online?",
+  "a3": "Sim! Pode encomendar diretamente através do pagina Web ou pelas plataformas parceiras."
   }
 }
+

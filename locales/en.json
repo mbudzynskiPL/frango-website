@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Frango – Healthy and Fresh Grilled Chicken in Warsaw",
-    "description": "Healthy and fresh chicken grilled in Warsaw in portugeese style. Jucy meat, crispy skin, fresh sides and piri-piri and lime sauces. Order for pickup or delivery."
+    "description": "Healthy and fresh chicken grilled in Warsaw in Portugeese style. Juicy meat, crispy skin, fresh sides and piri-piri and lime sauces. Order for pickup or delivery."
   },
   "common": {
     "logoAlt": "Frango Grilled Chicken",
@@ -81,7 +81,7 @@
     },
     "lime": {
       "description": "Mild and citrusy",
-      "alt": "Lisbone Lime dip"
+      "alt": "Lisbon Lime dip"
     }
   },
   "story": {
@@ -155,5 +155,18 @@
     "success": "Welcome to the Frango Club! 🎉",
     "duplicate": "This phone number is already registered in the Frango Club.",
     "error": "The data could not be saved. Please try again."
+  },
+  
+"faq": {
+  "kicker": "FAQ",
+  "title": "Have questions?",
+  "intro": "Find answers to the most frequently asked questions about Frango, our chicken and ordering.",
+  "q1": "Does Frango offer rotisserie chicken in Warsaw?",
+  "a1": "Frango is an alternative to traditional rotisserie chicken. We prepare fresh, juicy chicken grilled on site in Portuguese style.",
+  "q2": "Where can I enjoy Frango grilled chicken in Warsaw?",
+  "a2": "Visit us at Aleja Solidarności 117 in Warsaw- crossing with Aleja Jana Pawła II.",
+  "q3": "Can I order Frango chicken online?",
+  "a3": "Yes! You can order directly through our web page or through partner apps."
   }
 }
+

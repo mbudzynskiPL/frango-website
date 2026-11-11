@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Frango – Zdrowy i świeży kurczak z grilla w Warszawie",
-    "description": "Zdrowy i świeży kurczak, grillowany w Warszawie w stylu portugalskim. Soczyste mięso, chrupiąca skórka, świeże dodatki oraz sos piri-piri i cytrynowy. Zamów na wynos lub z dostawą."
+    "description": "Zdrowy i świeży kurczak, grillowany w Warszawie w stylu portugalskim. Soczyste mięso, chrupiąca skórka, świeże dodatki oraz sos piri-piri i cytrynowy. Alternatywa dla kurczaka z rożna. Zamów na wynos lub z dostawą."
   },
   "common": {
     "logoAlt": "Frango Grillowany Kurczak",
@@ -154,5 +154,17 @@
     "success": "Witamy w Klubie Frango! 🎉",
     "duplicate": "Ten numer telefonu jest już zapisany w Klubie Frango.",
     "error": "Nie udało się zapisać danych. Spróbuj ponownie."
-  }
+  },
+  
+"faq": {
+  "kicker": "FAQ",
+  "title": "Masz pytania?",
+  "intro": "Sprawdź najczęściej zadawane pytania o Frango, naszego kurczaka i zamówienia.",
+  "q1": "Czy Frango oferuje kurczaka z rożna w Warszawie?",
+  "a1": "Frango to alternatywa dla tradycyjnego kurczaka z rożna. Przygotowujemy świeżego, soczystego kurczaka grillowanego na miejscu w portugalskim stylu.",
+  "q2": "Gdzie można zjeść grillowanego kurczaka Frango w Warszawie?",
+  "a2": "Zapraszamy do naszego lokalu przy Alei Solidarności 117 w Warszawie- skrzyżowanie z Aleją Jana Pawła II.",
+  "q3": "Czy można zamówić kurczaka Frango online?",
+  "a3": "Tak! Zamówienia przyjmujemy bezpośrednio na naszej stronnie internetowej oraz przez aplikacje partnerskie."
+}
 }

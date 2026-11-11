@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description"
-    content="Zdrowy i świeży kurczak, grillowany w Warszawie w stylu portugalskim. Soczyste mięso, chrupiąca skórka, świeże dodatki oraz sos piri-piri i cytrynowy. Zamów na wynos lub z dostawą."
+    content="Zdrowy i świeży kurczak, grillowany w Warszawie w stylu portugalskim. Soczyste mięso, chrupiąca skórka, świeże dodatki oraz sos piri-piri i cytrynowy. Alternatywa dla kurczaka z rożna. Zamów na wynos lub z dostawą."
     data-i18n-meta="meta.description">
 
   <meta name="theme-color" content="#0b2f4a">
@@ -935,6 +935,86 @@
       filter: brightness(1.06);
       transform: translateY(-2px);
     }
+
+    /* FAQ - Frango */
+    .faq-section {
+      background: var(--cream);
+    }
+
+    .faq-list {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .faq-item {
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      margin-bottom: 14px;
+      overflow: hidden;
+      box-shadow: 0 8px 24px rgba(6, 34, 56, .06);
+    }
+
+    .faq-item summary {
+      position: relative;
+      cursor: pointer;
+      list-style: none;
+      padding: 21px 58px 21px 24px;
+      color: var(--navy);
+      font-weight: 800;
+      font-size: 17px;
+      line-height: 1.45;
+    }
+
+    .faq-item summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .faq-item summary::after {
+      content: "+";
+      position: absolute;
+      right: 23px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--orange);
+      font-size: 27px;
+      font-weight: 500;
+    }
+
+    .faq-item[open] summary::after {
+      content: "−";
+    }
+
+    .faq-item summary:hover {
+      color: var(--orange);
+    }
+
+    .faq-answer {
+      padding: 0 24px 22px;
+      color: var(--muted);
+      font-size: 15px;
+      line-height: 1.75;
+    }
+
+    .faq-answer p {
+      margin: 0;
+    }
+
+    @media(max-width:600px) {
+      .faq-item summary {
+        padding: 18px 48px 18px 18px;
+        font-size: 15px;
+      }
+
+      .faq-item summary::after {
+        right: 17px;
+      }
+
+      .faq-answer {
+        padding: 0 18px 18px;
+        font-size: 14px;
+      }
+    }
   </style>
 
   <style>
@@ -1020,7 +1100,8 @@
         <h1>FRANGO<br><span class="orange" data-i18n="hero.headingGrilled">GRILLOWANY</span><br><span class="lime"
             data-i18n="hero.headingChicken">KURCZAK</span></h1>
         <p data-i18n="hero.description">Zdrowy i świeży kurczak, grillowany w Warszawie w stylu portugalskim.
-          Soczyste mięso, chrupiąca skórka, świeże dodatki i charakterne sosy.</p>
+          Soczyste mięso, chrupiąca skórka, świeże dodatki i charakterne sosy. Szukasz kurczaka z rożna w Warszawie?
+          Poznaj portugalską alternatywę – soczystego kurczaka grillowanego na miejscu w Frango.</p>
         <div class="script" data-i18n="hero.script">Po portugalsku. Po naszemu.</div>
         <div class="actions"><a class="btn btn-lime" href="#menu" data-i18n="hero.menuButton">ZOBACZ MENU</a><button
             type="button" class="btn btn-primary goorder" data-goorder-open data-goorder-modal="1"
@@ -1131,7 +1212,16 @@
               data-i18n="story.titleAccent">grillowania</span></h2>
           <p data-i18n="story.description">Skupiamy się na jednej rzeczy: zdrowym, świeżym i dobrze zgrillowanym
             kurczaku. Grillujemy go tak, aby mięso pozostało soczyste, a skórka była odpowiednio przypieczona i pełna
-            smaku. Do tego polecamy idealnie pasujące dodatki oraz nasz autorski dip.</p>
+            smaku. Do tego polecamy idealnie pasujące dodatki oraz nasze autorskie dipy.</p>
+          <h3>Świeży i zdrowy kurczak – alternatywa dla tradycyjnego kurczaka z rożna</h3>
+          <p>
+            Jeśli szukasz dobrego kurczaka z rożna w Warszawie,
+            poznaj Frango! Przygotowujemy świeżego, soczystego
+            kurczaka grillowanego na miejscu w portugalskim stylu.
+            To wyjątkowa alternatywa dla tradycyjnego kurczaka
+            z rożna – z chrupiącą skórką, aromatycznymi przyprawami
+            i oryginalnymi sosami Piri-Piri oraz Lisbon Lime.
+          </p>
           <p><strong><span style="color: var(--orange)">Frango</span> <span style="color: var(--navy)"
                 data-i18n="story.best">to najlepszy kurczak w mieście!</span></strong></p>
           <p class="dip-choice"><strong data-i18n="story.dipLime">Wybierz dip cytrynowy</strong> <img
@@ -1207,6 +1297,61 @@
               zamów z odbiorem.</p><a class="btn btn-primary" href="tel:+48884213292">📞 884 213 292</a>
             <p><strong>Godziny otwarcia</strong><br>Nd–Czw: 11:00–21:00<br>Pt–Sob: 11:00–21:30</p>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq-section" id="faq">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="section-kicker" data-i18n="faq.kicker">FAQ</div>
+            <h2 data-i18n="faq.title">Masz pytania?</h2>
+          </div>
+          <p data-i18n="faq.intro">
+            Sprawdź najczęściej zadawane pytania o Frango, naszego kurczaka i zamówienia.
+          </p>
+        </div>
+
+        <div class="faq-list">
+
+          <details class="faq-item">
+            <summary data-i18n="faq.q1">
+              Czy Frango oferuje kurczaka z rożna w Warszawie?
+            </summary>
+            <div class="faq-answer">
+              <p data-i18n="faq.a1">
+                Frango to alternatywa dla tradycyjnego kurczaka z rożna.
+                Przygotowujemy świeżego, soczystego kurczaka grillowanego
+                na miejscu w portugalskim stylu.
+              </p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary data-i18n="faq.q2">
+              Gdzie można zjeść grillowanego kurczaka Frango w Warszawie?
+            </summary>
+            <div class="faq-answer">
+              <p data-i18n="faq.a2">
+                Zapraszamy do naszego lokalu przy Alei Solidarności 117
+                w Warszawie- skrzyżowanie z Aleją Jana Pawła II.
+              </p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary data-i18n="faq.q3">
+              Czy można zamówić kurczaka Frango online?
+            </summary>
+            <div class="faq-answer">
+              <p data-i18n="faq.a3">
+                Tak! Zamówienia przyjmujemy bezpośrednio na naszej stronnie internetowej oraz przez apliakcje
+                partnerskie.
+              </p>
+            </div>
+          </details>
+
         </div>
       </div>
     </section>
